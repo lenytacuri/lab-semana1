@@ -43,9 +43,14 @@ def guardar(df: pd.DataFrame, ruta: str) -> None:
     df.to_parquet(ruta)
 
 
+def mostrar_head(df: pd.DataFrame, n: int = 10) -> None:
+    print(df.head(n))
+
+
 if __name__ == "__main__":
     df_crudo = cargar(URL_DATASET, na_values=[-200])
     print(reporte_nulos(df_crudo))
 
     df_limpio = limpiar(df_crudo)
+    mostrar_head(df_limpio)
     guardar(df_limpio, "data/limpio.parquet")
