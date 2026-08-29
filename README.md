@@ -14,3 +14,6 @@ uv run python main.py
 ## Hallazgos
 
 ## Decisiones de limpieza
+
+Pregunta de investigación 1
+- Por el archivo uv.lock, este es un archivo que almacena las versiones exactas, dependencias y firmas de seguridad de cada librería para replicar el proyecto de manera idéntica.
