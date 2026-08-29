@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from lab_semana1.carga import cargar, guardar, limpiar, reporte_nulos
+from src.carga import cargar, guardar, limpiar, reporte_nulos
 
 
 def test_cargar_interpreta_na_values(tmp_path):
